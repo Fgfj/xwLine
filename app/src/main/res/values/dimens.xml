@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="cbb_sp_36">36sp</dimen>
+    <dimen name="cbb_sp_28">28sp</dimen>
+    <dimen name="cbb_sp_24">24sp</dimen>
+    <dimen name="cbb_sp_18">18sp</dimen>
+    <dimen name="cbb_sp_16">16sp</dimen>
+    <dimen name="cbb_sp_12">12sp</dimen>
+    <dimen name="cbb_sp_11">11sp</dimen>
+    <dimen name="cbb_sp_10">10sp</dimen>
+    <dimen name="cbb_sp_8">8sp</dimen>
+    <dimen name="cbb_sp_5">5sp</dimen>
+    <dimen name="cbb_sp_14">14sp</dimen>
+    <dimen name="cbb_sp_20">20sp</dimen>
+
+    <dimen name="cbb_dp_0.5">0.5dp</dimen>
+    <dimen name="cbb_dp_1">1dp</dimen>
+    <dimen name="cbb_dp_2.5">2.5dp</dimen>
+    <dimen name="cbb_dp_3">3dp</dimen>
+    <dimen name="cbb_dp_6">6dp</dimen>
+    <dimen name="cbb_dp_10">10dp</dimen>
+    <dimen name="cbb_dp_12">12dp</dimen>
+    <dimen name="cbb_dp_15">15dp</dimen>
+    <dimen name="cbb_dp_16">16dp</dimen>
+    <dimen name="cbb_dp_20">20dp</dimen>
+    <dimen name="cbb_dp_25">25dp</dimen>
+    <dimen name="cbb_dp_32">32dp</dimen>
+    <dimen name="cbb_dp_50">50dp</dimen>
+
+
+    <!--底部图片的高度-->
+    <dimen name="home_bottom_img_width">16dp</dimen>
+    <dimen name="home_bottom_img_height">22dp</dimen>
+    <dimen name="home_bottom_img_margin_top">9dp</dimen>
+    <dimen name="home_bottom_tx_margin_bottom">5dp</dimen>
+    <!--字体离顶部图片距离-->
+    <dimen name="home_bottom_tx_margin_top">3dp</dimen>
+    <!--底部字体大小-->
+    <dimen name="home_bottom_tx_size">9sp</dimen>
+    <!--小红点离底部距离-->
+    <dimen name="home_bottom_mine_red_point_margin_top">2dp</dimen>
+
+    <dimen name="appBarTxSize">18sp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+</resources>

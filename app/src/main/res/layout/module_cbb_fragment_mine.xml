@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/assistPrimary"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="175dp">
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:src="@drawable/module_cbb_mine_top_bg_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="175dp" />
+                <LinearLayout
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="44dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/module_cbb_mine_user_icon_img"
+                        android:src="@drawable/default_user_icon"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="@dimen/cbb_dp_50"
+                        android:layout_height="@dimen/cbb_dp_50" />
+                    <LinearLayout
+                        android:layout_marginEnd="60dp"
+                        android:layout_marginStart="10dp"
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/module_cbb_mine_user_name_tx"
+                            android:maxLines="1"
+                            android:enabled="true"
+                            android:layout_marginBottom="10dp"
+                            android:textSize="@dimen/cbb_sp_18"
+                            android:textColor="@color/white"
+                            android:text="点击登录"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/module_cbb_mine_user_sign_tx"
+                                android:enabled="true"
+                                android:maxLines="1"
+                                android:textSize="@dimen/cbb_sp_12"
+                                android:textColor="@color/white"
+                                android:text="登录更精彩"
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content" />
+                            <ImageView
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/module_cbb_mine_top_write_icon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/module_cbb_mine_rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

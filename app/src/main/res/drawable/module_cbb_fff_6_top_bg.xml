@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:topLeftRadius="@dimen/cbb_dp_6"
+        android:topRightRadius="@dimen/cbb_dp_6"/>
+    <!--0代表从上至下颜色渐变；45代表从左至右颜色渐变；90代表从下至上颜色渐变…-->
+    <solid android:color="#fff"/>
+</shape>

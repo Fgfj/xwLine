@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/white"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/item_ticket_detail_bill_tx"
+            android:textColor="@color/secondaryTextPrimary"
+            android:textSize="@dimen/cbb_sp_16"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/item_ticket_detail_money_tx"
+            android:textStyle="bold"
+            android:textColor="#D34A00 "
+            android:textSize="@dimen/cbb_sp_20"
+            android:gravity="end"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="5dp"
+        android:textColor="@color/secondaryTextPrimary"
+        android:textSize="@dimen/cbb_sp_16"
+        android:id="@+id/item_ticket_detail_user_id_tx"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/module_ct_check_tickets_time_icon"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp" />
+                <TextView
+                    android:id="@+id/item_ticket_detail_time_tx"
+                    android:textColor="@color/secondaryTextPrimary"
+                    android:textSize="@dimen/cbb_sp_16"
+                    android:layout_marginStart="13dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <!--<LinearLayout-->
+                <!--android:layout_marginTop="4dp"-->
+                <!--android:layout_marginBottom="4dp"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content">-->
+                <!--<ImageView-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:src="@drawable/module_ct_check_grenn_icon"-->
+                    <!--android:layout_width="4dp"-->
+                    <!--android:layout_marginStart="5dp"-->
+                    <!--android:layout_marginEnd="5dp"-->
+                    <!--android:layout_height="4dp" />-->
+                <!--<TextView-->
+                    <!--android:id="@+id/item_ticket_detail_start_station_tx"-->
+                    <!--android:textColor="@color/secondaryTextPrimary"-->
+                    <!--android:textSize="@dimen/cbb_sp_16"-->
+                    <!--android:layout_marginStart="13dp"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content" />-->
+
+            <!--</LinearLayout>-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="4dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/module_ct_check_red_icon"
+                    android:layout_height="4dp" />
+                <TextView
+                    android:id="@+id/item_ticket_detail_end_station_tx"
+                    android:textColor="@color/secondaryTextPrimary"
+                    android:textSize="@dimen/cbb_sp_16"
+                    android:layout_marginStart="13dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/item_checked_user_list_back_rl"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/module_ct_041341_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/cbb_sp_16"
+                    android:text="退检"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <!--<ImageView-->
+                <!--android:id="@+id/module_ct_item_user_img"-->
+                <!--android:layout_width="48dp"-->
+                <!--android:layout_height="48dp" />-->
+            <TextView
+                android:id="@+id/item_ticket_detail_user_name_tx"
+                android:layout_marginTop="3dp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/cbb_sp_16"
+                android:textColor="@color/secondaryTextPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/linePrimary"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+</LinearLayout>

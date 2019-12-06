@@ -1,0 +1,41 @@
+密钥库类型: jks
+密钥库提供方: SUN
+
+您的密钥库包含 1 个条目
+
+别名: key0
+创建日期: 2019-8-30
+条目类型: PrivateKeyEntry
+证书链长度: 1
+证书[1]:
+所有者: CN=yu, OU=yu, O=yu, L=yu, ST=yu, C=yu
+发布者: CN=yu, OU=yu, O=yu, L=yu, ST=yu, C=yu
+序列号: 54ae13b7
+有效期为 Fri Aug 30 10:29:17 CST 2019 至 Tue Aug 23 10:29:17 CST 2044
+证书指纹:
+         MD5:  AF:B4:C8:7E:63:C6:B1:C3:52:FD:E4:EC:4A:97:67:53
+         SHA1: 04:D1:62:2A:28:7E:07:59:B9:1B:6D:5C:41:CD:90:1B:C7:DC:0B:B1
+         SHA256: C6:A3:BE:FE:AC:DD:4A:13:6B:1D:48:8E:C1:00:0D:A7:CB:0D:71:0D:8F:F1:F2:DF:68:5A:8A:D3:68:47:AA:90
+签名算法名称: SHA256withRSA
+主体公共密钥算法: 2048 位 RSA 密钥
+版本: 3
+
+扩展:
+
+#1: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 1E 1F DD 67 4E 48 D9 D7   8C B7 DF 78 41 77 6F 71  ...gNH.....xAwoq
+0010: F5 D3 4B C9                                        ..K.
+]
+]
+
+
+
+*******************************************
+*******************************************
+
+
+
+Warning:
+JKS 密钥库使用专用格式。建议使用 "keytool -importkeystore -srckeystore /Users/yuzhou/Desktop/PALX-pos/ocrqs/Clean/doc/Untitled -destkeyuzhou/Desktop/PALX-pos/ocrqs/Clean/doc/Untitled -deststoretype pkcs12" 迁移到行业标准格式 PKCS12。

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@color/assistPrimary"
+        android:layout_height="6dp" />
+    <LinearLayout
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="@dimen/cbb_dp_15"
+        android:layout_marginEnd="@dimen/cbb_dp_15"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/module_cbb_order_cbb_logo_icon"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/module_cbb_order_list_item_type_tx"
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold"
+            android:text="代付款"
+            android:textColor="@color/Primary"
+            android:textSize="@dimen/cbb_sp_14"
+            android:layout_marginBottom="13dp"
+            android:layout_marginTop="13dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="end"/>
+    </LinearLayout>
+    <LinearLayout
+        android:background="#fafafa"
+        android:layout_marginStart="@dimen/cbb_dp_15"
+        android:layout_marginEnd="@dimen/cbb_dp_15"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/module_cbb_order_list_item_goods_img"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="67dp"
+            android:layout_height="67dp" />
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/module_cbb_order_list_item_goods_name_tx"
+                    android:textSize="@dimen/cbb_sp_14"
+                    android:textColor="@color/deepTextPrimary"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:ellipsize="end"
+                    android:id="@+id/module_cbb_order_list_item_goods_number_tx"
+                    android:layout_marginEnd="@dimen/cbb_dp_12"
+                    android:textSize="@dimen/cbb_sp_12"
+                    android:textColor="@color/secondaryTextPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView
+                android:maxLines="3"
+                android:id="@+id/module_cbb_order_list_item_goods_content_tx"
+                android:layout_marginEnd="@dimen/cbb_dp_12"
+                android:textColor="@color/shallowTextPrimary"
+                android:textSize="@dimen/cbb_sp_12"
+                android:layout_marginTop="11dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginStart="@dimen/cbb_dp_15"
+        android:layout_marginEnd="@dimen/cbb_dp_15"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="@dimen/cbb_sp_12"
+            android:textColor="@color/shallowTextPrimary"
+            android:layout_gravity="center_vertical"
+            android:text="需付款："
+            android:layout_marginEnd="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/module_cbb_order_list_item_py_money_tx"
+            android:textColor="@color/deepTextPrimary"
+            android:textSize="@dimen/cbb_sp_16"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/module_cbb_order_list_item_change_tx"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="@dimen/cbb_sp_12"
+            android:textColor="@color/shallowTextPrimary"
+            android:layout_gravity="center_vertical"
+            android:text="取消订单"
+            android:layout_marginEnd="9dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/module_cbb_order_list_item_onclick_rl"
+            android:background="@drawable/module_cbb_border_df1f01_3"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/module_cbb_order_list_item_onclick_tx"
+                android:textSize="@dimen/cbb_sp_12"
+                android:textColor="@color/Primary"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:text="去支付"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

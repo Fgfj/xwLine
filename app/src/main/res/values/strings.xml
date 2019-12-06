@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">扫码</string>
+
+    <!--上拉加载下拉刷新-->
+    <string name="empty_tip">当前没有数据</string>
+    <string name="error_empty">当前没有数据</string>
+    <string name="error_internet">网络异常</string>
+    <string name="error_server">服务器异常</string>
+    <!--首页-->
+    <string name="home_bottom_title_location_tx">我的</string>
+    <string name="home_bottom_title_store_tx">商城</string>
+    <string name="home_bottom_title_club_tx">车圈</string>
+    <string name="home_bottom_title_min_tx">车评</string>
+    <!-- CameraScanner -->
+    <string name="Module_CameraScanner">摄像头扫码器</string>
+    <string name="CameraScanner_module_desc">使用摄像头进行扫码。A8终端有前后置摄像可进行前后置不同的扫码，对于诸如A7/W280P/C10等终端，
+                因只有后置，故只能使用后置扫码功能。另外可进行扫码的前提条件是终端已集成扫码库。</string>
+
+
+    <string name="sdtname">Name:</string>
+    <string name="sdtsex">Sex:</string>
+    <string name="sdtnation">National:</string>
+    <string name="sdtbirthday">Birth:</string>
+    <string name="sdtaddress">Address:</string>
+    <string name="sdtpidno">Card Id:</string>
+    <string name="sdtgrantdept">Agencies:</string>
+    <string name="sdtuserlife">Use Time:</string>
+    <string name="sdtreadcard">Read Card</string>
+    <string name="sdtcyreadcard">Cycle Read</string>
+    <string name="stopcycle">Stop Cycle</string>
+    <string name="sdtexit">Exit</string>
+    <string name="sdtstatus">State:</string>
+    <string name="pid_message">Information </string>
+    <string-array name="pid_array"></string-array>
+    <string name="read_card">Card reading failed</string>
+    <string name="read_card_fail">Card reading failed, error code</string>
+    <string name="error_info">Error message</string>
+    <string name="error_code">Internal error code</string>
+    <string name="connect_fail">Connection device failed, error code</string>
+    <string name="close_fail">Device shutdown failed, error code</string>
+    <string name="title_activity_ntest">NTestActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+</resources>

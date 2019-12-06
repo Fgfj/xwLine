@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/assistPrimary"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/module_cbb_login_status_bar_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_below="@+id/module_cbb_login_status_bar_rl"
+        android:id="@+id/module_cbb_login_app_bar_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/module_cbb_login_close_img"
+            android:src="@drawable/module_cbb_login_close_icon"
+            android:layout_marginStart="14dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="21dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <TextView
+                android:text="登录"
+                android:id="@+id/module_cbb_login_title_tx"
+                android:layout_marginStart="@dimen/cbb_dp_6"
+                android:textColor="@color/deepTextPrimary"
+                android:textSize="@dimen/cbb_sp_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:id="@+id/module_cbb_login_center_ly"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/module_cbb_fff_6_bg"
+                android:layout_below="@+id/module_cbb_login_title_tx"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginTop="23dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/module_cbb_login_user_round_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:background="@color/linePrimary"
+                    android:layout_marginTop="31dp"
+                    android:layout_height="@dimen/cbb_dp_0.5" />
+                <LinearLayout
+                    android:layout_marginTop="53dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="7.5dp"
+                        android:src="@drawable/module_cbb_login_phone_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/module_cbb_login_phone_number_et"
+                        android:textColor="@color/deepTextPrimary"
+                        android:textSize="@dimen/cbb_sp_10"
+                        android:textColorHint="@color/shallowTextPrimary"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:hint="请输入手机号"
+                        android:inputType="phone"
+                        android:maxLength="11"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginBottom="141dp"
+                    android:layout_marginTop="41dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="7.5dp"
+                        android:src="@drawable/module_cbb_logion_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/module_cbb_login_phone_code_et"
+                        android:textColor="@color/deepTextPrimary"
+                        android:textSize="@dimen/cbb_sp_10"
+                        android:textColorHint="@color/shallowTextPrimary"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:hint="请输入验证码"
+                        android:maxLength="4"
+                        android:inputType="number"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:padding="5dp"
+                        android:id="@+id/module_cbb_login_get_phone_code_tx"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/shallowTextPrimary"
+                        android:textSize="@dimen/cbb_sp_8"
+                        android:text="获取验证码"
+                        android:layout_marginEnd="31dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/module_cbb_login_bottom_tx"
+                android:layout_below="@+id/module_cbb_login_center_ly"
+                android:layout_width="match_parent"
+                android:layout_height="14dp" />
+            <RelativeLayout
+                android:id="@+id/module_cbb_login_bottom_login_rl"
+                android:background="@drawable/module_cbb_e3e3e3_6_bg"
+                android:layout_alignBottom="@+id/module_cbb_login_bottom_tx"
+                android:layout_marginStart="36dp"
+                android:layout_marginEnd="36dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/cbb_sp_16"
+                    android:layout_centerInParent="true"
+                    android:text="登录"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginBottom="13dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="登录表示已经阅读并同意"
+            android:textColor="@color/shallowTextPrimary"
+            android:textSize="@dimen/cbb_sp_10"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="@dimen/cbb_dp_15"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@color/shallowTextPrimary"
+            android:textSize="@dimen/cbb_sp_10"
+            android:id="@+id/module_cbb_login_user_agreement_tx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

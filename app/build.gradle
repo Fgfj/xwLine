@@ -1,0 +1,148 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+greendao {
+    schemaVersion 1 //数据库版本号
+    daoPackage 'com.xacheliangroup.check.greenDao'
+// 设置DaoMaster、DaoSession、Dao 包名
+    targetGenDir 'src/main/java'//设置DaoMaster、DaoSession、Dao目录,请注意，这里路径用.不要用/
+//    generateTests false //设置为true以自动生成单元测试。
+//    targetGenDirTests 'src/main/java' //应存储生成的单元测试的基本目录。默认为 src / androidTest / java。
+}
+android {
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    signingConfigs {
+        config {
+            keyAlias 'key0'
+            keyPassword '123456yu'
+            storeFile file('../doc/Untitled')
+            storePassword '123456yu'
+        }
+    }
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.xacheliangroup.check"
+        minSdkVersion 19
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        flavorDimensions "versionCode"
+        multiDexEnabled true
+
+        ndk {
+            // 设置支持的SO库架构
+//            abiFilters "arm64-v8a","armeabi-v7a"
+            abiFilters "armeabi", "armeabi-v7a", "arm64-v8a", "x86", "arm64-v8a", "x86_64"
+//            abiFilters "armeabi","armeabi-v7a", "arm64-v8a"
+        }
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            debuggable true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            debuggable true
+            minifyEnabled false
+            signingConfig signingConfigs.config
+        }
+    }
+    productFlavors {
+        RELEASE {
+            manifestPlaceholders = [
+                    APP_ENV: "RELEASE"
+            ]
+        }
+        dev {
+            manifestPlaceholders = [
+                    APP_ENV: "DEVELOP"
+            ]
+        }
+        uat {
+            manifestPlaceholders = [
+                    APP_ENV: "UAT"
+            ]
+        }
+    }
+    packagingOptions {
+        exclude 'version-info.md'
+        exclude 'eptand-api-dependence.xml'
+        exclude 'assets/location_map_gps_locked.png'
+        exclude 'assets/location_map_gps_3d.png'
+    }
+//    sourceSets {
+//        main {
+//            jniLibs.srcDirs = ['libs']
+//        }
+//    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    //eventbus
+    implementation 'org.greenrobot:eventbus:3.0.0'
+    // http
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.3'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.9.0'
+    implementation 'com.alibaba:fastjson:1.1.57.android'
+    implementation 'com.facebook.stetho:stetho-okhttp3:1.3.0'
+    compile('com.squareup.retrofit2:converter-simplexml:2.3.0') {
+        exclude group: 'stax', module: 'stax-api'
+        exclude group: 'stax', module: 'stax'
+        exclude group: 'xpp3', module: 'xpp3'
+    }
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    implementation 'com.android.support:recyclerview-v7:26.0.0-alpha1'
+    implementation 'com.kaopiz:kprogresshud:1.1.0'
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.1.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.1.1'
+    //logger
+    implementation 'com.orhanobut:logger:2.1.1'
+    //luban 图片压缩
+    implementation 'top.zibin:Luban:1.1.3'
+    implementation 'com.android.support:multidex:1.0.0'
+    implementation 'com.airbnb.android:lottie:2.5.0-beta1'
+    //bugly
+    //    implementation 'com.tencent.bugly:crashreport:latest.release'
+    //    //其中latest.release指代最新Bugly SDK版本号，也可以指定明确的版本号，例如2.1.9
+    //    implementation 'com.tencent.bugly:nativecrashreport:latest.release'
+    implementation project(':album')
+    //垂直跑马灯https://github.com/ChessLuo/TextBannerView
+    implementation 'com.superluo:textbannerview:1.0.2'
+    //时间选择器https://blog.csdn.net/m0_37794706/article/details/78903576
+    implementation 'com.contrarywind:Android-PickerView:3.2.7'
+    //    cardview
+    implementation 'com.android.support:cardview-v7:28.0.0-alpha1'
+    implementation 'org.greenrobot:greendao:3.2.2'
+    implementation 'cn.bingoogolapple:bga-qrcode-zxing:1.3.6'
+    //    高德地图
+//    implementation 'com.amap.api:map2d:latest.integration'
+//    implementation 'com.amap.api:navi-3dmap:latest.integration'
+//    implementation 'com.amap.api:location:latest.integration'
+    implementation files('libs/SDK_release_v2.1.1.jar')
+
+
+    //Basic Socket client functionality
+    api 'com.tonystark.android:socket:4.2.2'
+    //If you want to use server functionality, you need to compile the following libraries
+//    api 'com.tonystark.android:socket-server:latest.release'
+}

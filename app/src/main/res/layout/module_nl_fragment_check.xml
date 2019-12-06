@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="#F5F3F3"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/module_nl_check_toolbar_fl"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:background="#041341"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/module_nl_check_back_img"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginStart="12dp"
+                    android:src="@drawable/album_ic_back_white" />
+
+            </FrameLayout>
+
+            <LinearLayout
+
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textStyle="bold"
+                    android:text="扫码查询"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@color/white"
+        android:layout_below="@+id/module_nl_check_toolbar_fl"
+        android:id="@+id/module_nl_check_top_fl"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/module_nl_check_name_tx"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                android:textSize="@dimen/cbb_sp_20"
+                android:textColor="#3F3F3F"
+                android:text="明字"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/module_nl_check_phone_tx"
+                android:layout_marginStart="24dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:textColor="#3F3F3F"
+                android:textStyle="bold"
+                android:text="13213123123"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/module_nl_check_id_tx"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="15dp"
+            android:text="612327*********114"
+            android:textColor="#3F3F3F"
+            android:textSize="@dimen/cbb_sp_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/module_nl_check_top_fl"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/module_nl_check_time_tx"
+                android:textSize="@dimen/cbb_sp_14"
+                android:textColor="#3F3F3F "
+                android:textStyle="bold"
+                android:layout_marginStart="15dp"
+                android:text="2019-08-01  16:00:00"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/module_nl_check_order_tx"
+                android:layout_marginEnd="15dp"
+                android:textSize="@dimen/cbb_sp_14"
+                android:textColor="#3F3F3F "
+                android:textStyle="bold"
+                android:text="订单号：1022678776"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/linePrimary"/>
+        <LinearLayout
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="9dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/module_nl_start_staion_icon"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="10dp"
+                android:layout_height="10dp" />
+            <TextView
+                android:id="@+id/module_nl_check_start_tx"
+                android:textColor="#3F3F3F"
+                android:text="西安市 · 北大街站点"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="9dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/module_nl_end_staion_icon"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="10dp"
+                android:layout_height="10dp" />
+            <TextView
+                android:id="@+id/module_nl_check_end_tx"
+                android:textColor="#3F3F3F"
+                android:text="渭南市 · 临渭区市中心医院"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="9dp"
+            android:background="#DFDFDF"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            />
+        <TextView
+            android:id="@+id/module_nl_check_start_time_tx"
+            android:paddingBottom="14dp"
+            android:paddingTop="14dp"
+            android:textColor="#3F3F3F "
+            android:textSize="@dimen/cbb_sp_12"
+            android:layout_marginStart="15dp"
+            android:text="出发时间段：2019-08-01"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="18dp"
+            android:text="订单备注"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginStart="20dp"
+            android:textColor="#DFDFDF"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:text="有孕妇"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/module_nl_check_rl"
+        android:background="#041341"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="49dp">
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="确认上车"
+            android:textSize="@dimen/cbb_sp_20"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>

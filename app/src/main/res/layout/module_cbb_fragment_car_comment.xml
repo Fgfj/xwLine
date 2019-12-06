@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:background="@color/white"
+        android:id="@+id/module_cbb_car_comment_status_bar_tx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:background="@color/white"
+        android:id="@+id/module_cbb_car_comment_app_bar_rl"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <TextView
+            android:text="大咖说车"
+            android:textSize="@dimen/appBarTxSize"
+            android:textColor="@color/appBarTxColor"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/module_cbb_car_comment_text_icon"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cbb_dp_0.5"
+        android:background="@color/linePrimary"/>
+    <com.xacheliangroup.check.common.base.pullrefresh.RefreshLayout
+        android:id="@+id/module_cbb_car_comment_rfl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/module_cbb_car_comment_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+    </com.xacheliangroup.check.common.base.pullrefresh.RefreshLayout>
+</LinearLayout>

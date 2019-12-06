@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/white"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/module_cbb_mine_ui_item_top_tx"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/assistPrimary"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/module_cbb_mine_ui_item_img"
+            android:layout_margin="12dp"
+            android:scaleType="fitXY"
+            android:layout_gravity="center_vertical"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+        <TextView
+            android:id="@+id/module_cbb_mine_ui_item_title_tx"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="#333333"
+            android:textSize="@dimen/cbb_sp_14"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/module_cbb_mine_ui_item_red_img"
+            android:src="@drawable/module_cbb_all_red_point"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginBottom="12dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/module_cbb_all_arrow_right_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/module_cbb_mine_ui_item_line_tx"
+        android:layout_marginStart="45dp"
+        android:layout_width="match_parent"
+        android:background="@color/linePrimary"
+        android:layout_height="@dimen/cbb_dp_0.5" />
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/white"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/dialog_ct_input_title_tx"
+        android:textColor="#3f3f3f"
+        android:textSize="15sp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="20dp"
+        android:text="请输入身份证号码"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/dialog_setup_user_other_ly"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/dialog_ct_input_et"
+                android:layout_marginStart="29dp"
+                android:layout_marginTop="35dp"
+                android:textColor="#3f3f3f"
+                android:textSize="15sp"
+                android:background="@null"
+                android:maxLines="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#3E75FF"/>
+            <TextView
+                android:id="@+id/dialog_setup_user_edit_num_tx"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="25dp"
+                android:textSize="12sp"
+                android:textColor="#c1c1c1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/dialog_setup_user_edit_unit_tx"
+            android:layout_marginEnd="15dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="18sp"
+            android:textColor="#3E75FF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/dialog_setup_user_sex_ly"
+        android:layout_marginStart="26dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/sex_man_check"
+            android:layout_marginTop="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="5dp"/>
+        <TextView
+            android:text="男"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:layout_marginStart="20dp"
+            android:id="@+id/sex_woman_check"
+            android:layout_marginTop="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="5dp"/>
+        <TextView
+            android:text="女"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginBottom="14dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="25dp"
+        android:layout_gravity="end"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/dialog_ct_input_cancel_tx"
+            android:textSize="15sp"
+            android:textColor="#3f3f3f"
+            android:text="取消"
+            android:layout_marginEnd="35dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/dialog_ct_input_submit_tx"
+            android:textSize="15sp"
+            android:textColor="#3E75FF"
+            android:text="确定"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

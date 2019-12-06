@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/module_cbb_seller_home_ns"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/module_cbb_seller_home_vp"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+                </android.support.v4.view.ViewPager>
+                <RadioGroup
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/module_cbb_seller_home_rg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone"/>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cbb_dp_15"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/module_cbb_seller_home_title_tx"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/deepTextPrimary"
+                        android:textSize="@dimen/cbb_sp_16" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/cbb_dp_15"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/module_cbb_seller_home_tab_1_rl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/module_cbb_circle_ffb7b7_2_bg">
+
+                            <TextView
+                                android:id="@+id/module_cbb_seller_home_tab_1_tx"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="2.5dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="2.5dp"
+                                android:text="标签1"
+                                android:textColor="@color/Primary"
+                                android:textSize="@dimen/cbb_sp_10" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/module_cbb_seller_home_tab_2_rl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginStart="5dp"
+                            android:background="@drawable/module_cbb_circle_16a242_2_bg">
+
+                            <TextView
+                                android:id="@+id/module_cbb_seller_home_tab_2_tx"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="2.5dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="2.5dp"
+                                android:text="标签2"
+                                android:textColor="#16a242"
+                                android:textSize="@dimen/cbb_sp_10" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/module_cbb_seller_home_tab_3_rl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/module_cbb_circle_ffb7b7_2_bg">
+
+                            <TextView
+                                android:id="@+id/module_cbb_seller_home_tab_3_tx"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="2.5dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="2.5dp"
+                                android:text="标签3"
+                                android:textColor="@color/Primary"
+                                android:textSize="@dimen/cbb_sp_10" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="@dimen/cbb_dp_1"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/cbb_dp_15"
+                    android:layout_marginStart="@dimen/cbb_dp_15"
+                    android:background="@color/linePrimary" />
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/module_cbb_seller_home_star_tx"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="14dp"
+                        android:textColor="#FFC900"
+                        android:textSize="@dimen/cbb_sp_18" />
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/module_cbb_seller_home_star_rv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </android.support.v7.widget.RecyclerView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginStart="@dimen/cbb_dp_15"
+                android:layout_marginEnd="@dimen/cbb_dp_15"
+                android:background="@color/linePrimary"
+                android:layout_height="@dimen/cbb_dp_0.5" />
+
+            <LinearLayout
+                android:layout_marginStart="@dimen/cbb_dp_15"
+                android:layout_marginEnd="@dimen/cbb_dp_15"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/module_cbb_all_phone_icon"/>
+                <TextView
+                    android:id="@+id/module_cbb_seller_home_phone_number_tx"
+                    android:layout_marginTop="@dimen/cbb_dp_15"
+                    android:layout_marginBottom="@dimen/cbb_dp_15"
+                    android:layout_marginStart="@dimen/cbb_dp_15"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/deepTextPrimary"
+                    android:textSize="@dimen/cbb_sp_14"/>
+                <TextView
+                    android:text="联系店家"
+                    android:textSize="@dimen/cbb_sp_12"
+                    android:textColor="@color/secondaryTextPrimary"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_marginTop="@dimen/cbb_dp_20"
+                    android:layout_marginBottom="@dimen/cbb_dp_20"
+                    android:layout_marginStart="@dimen/cbb_dp_10"
+                    android:src="@drawable/module_cbb_all_arrow_right_icon"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginStart="@dimen/cbb_dp_15"
+                android:layout_marginEnd="@dimen/cbb_dp_15"
+                android:background="@color/linePrimary"
+                android:layout_height="@dimen/cbb_dp_0.5" />
+
+            <LinearLayout
+                android:layout_marginStart="@dimen/cbb_dp_15"
+                android:layout_marginEnd="@dimen/cbb_dp_15"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/module_cbb_all_location_icon"/>
+                <TextView
+                    android:id="@+id/module_cbb_seller_home_seller_address_tx"
+                    android:layout_marginEnd="@dimen/cbb_dp_32"
+                    android:maxLines="2"
+                    android:layout_marginTop="@dimen/cbb_dp_15"
+                    android:layout_marginBottom="@dimen/cbb_dp_15"
+                    android:layout_marginStart="@dimen/cbb_dp_15"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/deepTextPrimary"
+                    android:textSize="@dimen/cbb_sp_14"/>
+                <TextView
+                    android:id="@+id/module_cbb_seller_home_seller_distance_tx"
+                    android:textSize="@dimen/cbb_sp_12"
+                    android:textColor="@color/secondaryTextPrimary"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_marginTop="@dimen/cbb_dp_20"
+                    android:layout_marginBottom="@dimen/cbb_dp_20"
+                    android:layout_marginStart="@dimen/cbb_dp_10"
+                    android:src="@drawable/module_cbb_all_arrow_right_icon"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@color/assistPrimary"
+                android:layout_height="@dimen/cbb_dp_10" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="500dp">
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <FrameLayout
+        android:id="@+id/module_cbb_seller_home_top_fl"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/module_cbb_seller_home_top_bg_tx"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/module_cbb_seller_home_back_img"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginStart="12dp"
+                    android:src="@drawable/module_cbb_all_back_bg_w_wihte" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/module_cbb_seller_home_top_title_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="商家详情"
+                android:textColor="@color/deepTextPrimary"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cbb_dp_0.5"
+        android:layout_below="@+id/module_cbb_seller_home_top_fl"
+        android:background="@color/linePrimary"
+        android:visibility="gone" />
+
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:background="@drawable/module_cbb_df1f01_6_bg"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="57dp"
+            android:layout_marginEnd="57dp"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="评价"
+                android:textSize="@dimen/cbb_sp_16"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

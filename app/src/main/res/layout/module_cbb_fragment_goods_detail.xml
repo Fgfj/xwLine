@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/module_cbb_goods_detail_ns"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="278dp">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/module_cbb_goods_detail_vp"
+                    android:layout_width="match_parent"
+                    android:layout_height="278dp">
+                </android.support.v4.view.ViewPager>
+                <RadioGroup
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/module_cbb_goods_detail_rg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:background="@drawable/module_cbb_gradient_rect_ff5f3c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/module_cbb_goods_price_tx"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/cbb_sp_20"
+                    android:textStyle="bold"
+                    android:layout_marginStart="@dimen/cbb_dp_15"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginBottom="17dp"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/module_cbb_goods_title_tx"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginStart="@dimen/cbb_dp_15"
+                android:textColor="@color/deepTextPrimary"
+                android:textSize="@dimen/cbb_sp_18"
+                android:layout_marginEnd="@dimen/cbb_dp_15"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/module_cbb_goods_content_tx"
+                android:textSize="@dimen/cbb_sp_14"
+                android:textColor="@color/shallowTextPrimary"
+                android:layout_marginStart="@dimen/cbb_dp_15"
+                android:layout_marginEnd="@dimen/cbb_dp_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@color/linePrimary"
+                android:layout_marginBottom="@dimen/cbb_dp_20"
+                android:layout_marginTop="@dimen/cbb_dp_20"
+                android:layout_height="@dimen/cbb_dp_10" />
+            <TextView
+                android:text="详情"
+                android:layout_marginBottom="7dp"
+                android:layout_marginStart="@dimen/cbb_dp_15"
+                android:textColor="@color/deepTextPrimary"
+                android:textSize="@dimen/cbb_sp_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <WebView
+                android:id="@+id/module_cbb_goods_detail_wv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </WebView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp" />
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <FrameLayout
+        android:id="@+id/module_cbb_goods_detail_top_fl"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/module_cbb_goods_detail_top_bg_tx"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/module_cbb_goods_detail_back_img"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginStart="12dp"
+                    android:src="@drawable/module_cbb_all_back_bg_w_wihte" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/module_cbb_goods_detail_top_title_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="商品详情"
+                android:textColor="@color/deepTextPrimary"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cbb_dp_0.5"
+        android:layout_below="@+id/module_cbb_goods_detail_top_fl"
+        android:background="@color/linePrimary"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/module_cbb_goods_detail_submit_rl"
+            android:background="@drawable/module_cbb_df1f01_6_bg"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="57dp"
+            android:layout_marginEnd="57dp"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="立即购买"
+                android:textSize="@dimen/cbb_sp_16"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

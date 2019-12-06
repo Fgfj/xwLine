@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:scaleType="fitXY"
+        android:id="@+id/module_cbb_advert_act_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:text="3"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="15dp"
+        android:textSize="@dimen/cbb_sp_36"
+        android:textColor="@color/deepTextPrimary"
+        android:id="@+id/module_cbb_advert_act_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

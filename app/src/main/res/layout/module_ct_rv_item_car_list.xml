@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/item_car_no_tx"
+                android:textSize="@dimen/album_sp_14"
+                android:textColor="@color/secondaryTextPrimary"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/item_car_time_tx"
+                android:textSize="@dimen/album_sp_14"
+                android:layout_width="0dp"
+                android:textColor="@color/secondaryTextPrimary"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/item_car_type_tx"
+                android:textSize="@dimen/album_sp_14"
+                android:gravity="end"
+                android:textColor="@color/secondaryTextPrimary"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/item_car_start_tx"
+                android:textStyle="bold"
+                android:layout_marginStart="15dp"
+                android:textColor="@color/secondaryTextPrimary"
+                android:textSize="@dimen/album_sp_20"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:background="#49ACFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/album_sp_14"
+                    android:text="始"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/item_car_start_time_tx"
+                android:textSize="@dimen/album_sp_18"
+                android:layout_marginStart="7dp"
+                android:textColor="@color/secondaryTextPrimary"
+                android:layout_marginEnd="7dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:background="#00A268"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/album_sp_14"
+                    android:text="终"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/item_car_end_tx"
+                android:textStyle="bold"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/secondaryTextPrimary"
+                android:textSize="@dimen/album_sp_20"
+                android:gravity="end"
+                android:layout_marginEnd="15dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/item_car_start_location_tx"
+                android:textSize="@dimen/album_sp_14"
+                android:textColor="@color/secondaryTextPrimary"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="郑州东站"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/item_car_end_location_tx"
+                android:textSize="@dimen/album_sp_14"
+                android:textColor="@color/secondaryTextPrimary"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="西安东站"
+                android:gravity="end"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageView
+            android:layout_marginTop="15dp"
+            android:src="@drawable/module_ct_car_detail_line_icon"
+            android:scaleType="fitXY"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/item_car_car_no_tx"
+                android:textSize="@dimen/album_sp_20"
+                android:textColor="@color/secondaryTextPrimary"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/item_car_car_company_tx"
+                android:textSize="@dimen/album_sp_16"
+                android:textColor="@color/secondaryTextPrimary"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/module_ct_item_car_list_bottom_ly"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="售票数"
+            android:layout_marginStart="15dp"
+            android:textColor="@color/deepTextPrimary"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/item_car_sell_number_tx"
+            android:text="12"
+            android:textColor="@color/deepTextPrimary"
+            android:textSize="@dimen/cbb_sp_12"
+            android:layout_marginEnd="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:paddingTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="检票数"
+            android:layout_marginStart="15dp"
+            android:textColor="@color/deepTextPrimary"
+            android:textSize="@dimen/cbb_sp_12"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/item_car_check_number_tx"
+            android:text="12"
+            android:textColor="@color/deepTextPrimary"
+            android:textSize="@dimen/cbb_sp_12"
+            android:layout_marginEnd="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginBottom="15dp"
+        android:paddingTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="结算数"
+            android:layout_marginStart="15dp"
+            android:textColor="@color/deepTextPrimary"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/item_car_over_number_tx"
+            android:text="12"
+            android:textColor="@color/deepTextPrimary"
+            android:textSize="@dimen/cbb_sp_12"
+            android:layout_marginEnd="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
