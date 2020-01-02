@@ -8,7 +8,6 @@ import android.util.Log;
 
 import com.xacheliangroup.check.common.eventbus.MessageEvent;
 import com.xacheliangroup.check.common.flag.Flag;
-import com.xacheliangroup.check.common.log.CbbLogUtils;
 import com.xacheliangroup.check.utils.ToastUtils;
 
 import org.greenrobot.eventbus.EventBus;

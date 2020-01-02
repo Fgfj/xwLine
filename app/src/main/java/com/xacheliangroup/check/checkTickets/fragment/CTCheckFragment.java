@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.device.ScanDevice;
+import android.media.MediaPlayer;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
@@ -57,7 +58,7 @@ public class CTCheckFragment extends BaseFragment implements IActionListener.Vie
      * 则弹窗显示票务信息 手工进行检票
      * 检票成功以后  将数据添加到乘客列表里面
      */
-
+    private MediaPlayer mMediaPlayer;
 
     private String mInputType = "0";//0身份证  1二维码
     CTPresenter mCtPresenter;
@@ -103,6 +104,7 @@ public class CTCheckFragment extends BaseFragment implements IActionListener.Vie
     private static final String SN = Utils.getDeviceSN();
 
     private List<CTUserListBean> mHistoryUserListBean;
+    private EditText mInputEt;
 
     @Override
     public void showInfoView(String type, Object obj) {
@@ -174,9 +176,11 @@ public class CTCheckFragment extends BaseFragment implements IActionListener.Vie
                         case 3://不可检票
                             ToastUtils.showToast(getContext(), "不可检");
                             showTicketsDetail("3", ctIdOrQrcodeCheckBean);
+                            mMediaPlayer.start();
                             break;
                         case 4://未查到票
                             ToastUtils.showToast(getContext(), "没有查到票");
+                            mMediaPlayer.start();
                             break;
 
                     }
@@ -185,6 +189,7 @@ public class CTCheckFragment extends BaseFragment implements IActionListener.Vie
                     mDialogShowToastTx.setText((String) obj);
                     mDialogShowToast.show();
                     toGetCheckedListData();//会排序需要重新刷新
+                    mMediaPlayer.start();
                 }
 
                 break;
@@ -283,6 +288,7 @@ public class CTCheckFragment extends BaseFragment implements IActionListener.Vie
         getCarDetailData();
         initDialog();
         initQrCode();
+        mMediaPlayer=MediaPlayer.create(getContext(),R.raw.checkfile);
     }
 
     private BroadcastReceiver mScanReceiver = new BroadcastReceiver() {
@@ -360,7 +366,7 @@ public class CTCheckFragment extends BaseFragment implements IActionListener.Vie
         View mInputNumberView = View.inflate(getContext(), R.layout.module_ct_dialog_input_number, null);
         mInputNumberDialog = DialogUtils.getDiyDialog(getActivity(), getContext(), mInputNumberView, Gravity.CENTER, 0.7f);
         final TextView mInputTitleTx = mInputNumberView.findViewById(R.id.dialog_ct_input_title_tx);
-        final EditText mInputEt = mInputNumberView.findViewById(R.id.dialog_ct_input_et);
+        mInputEt = mInputNumberView.findViewById(R.id.dialog_ct_input_et);
         TextView mInputCancelTx = mInputNumberView.findViewById(R.id.dialog_ct_input_cancel_tx);
         TextView mInputSubmitTx = mInputNumberView.findViewById(R.id.dialog_ct_input_submit_tx);
         mInputCancelTx.setOnClickListener(new View.OnClickListener() {
@@ -393,6 +399,7 @@ public class CTCheckFragment extends BaseFragment implements IActionListener.Vie
                 mInputChoiceDialog.dismiss();
                 mInputNumberDialog.show();
                 mInputTitleTx.setText("请输入身份证号码");
+                mInputEt.setText("");
             }
         });
         mInputQrCodeText.setOnClickListener(new View.OnClickListener() {
@@ -402,6 +409,7 @@ public class CTCheckFragment extends BaseFragment implements IActionListener.Vie
                 mInputChoiceDialog.dismiss();
                 mInputNumberDialog.show();
                 mInputTitleTx.setText("请输入条形码编码");
+                mInputEt.setText("");
             }
         });
         mInputCancelText.setOnClickListener(new View.OnClickListener() {

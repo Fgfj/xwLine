@@ -14,7 +14,6 @@ import com.xacheliangroup.check.moduleNetLine.activity.NetLineMapActivity;
 import com.xacheliangroup.check.moduleNetLine.mvp.NetLinePresenter;
 import com.xacheliangroup.check.moduleNetLine.mvp.bean.NetLinePointListBean;
 
-import butterknife.BindView;
 import butterknife.OnClick;
 
 /**

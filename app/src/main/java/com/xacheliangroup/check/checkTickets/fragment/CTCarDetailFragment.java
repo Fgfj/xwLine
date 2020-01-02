@@ -21,7 +21,6 @@ import com.xacheliangroup.check.common.flag.Flag;
 import com.xacheliangroup.check.common.http.okhttp.IActionListener;
 import com.xacheliangroup.check.common.log.CbbLogUtils;
 import com.xacheliangroup.check.utils.ProgressHelp;
-import com.xacheliangroup.check.utils.ToastUtils;
 
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;

@@ -11,7 +11,10 @@
 <!--        <item>http://192.168.0.134:8088/</item>-->
     </string-array>
     <string-array name="RELEASE">
-        <item>http://192.168.18.10:8088/</item>
+<!--        纺织城内网-->
+<!--        <item>http://192.168.18.10:8088/</item>-->
+<!--        纺织城外网-->
+        <item>http://282t70v989.wicp.vip:30687/</item>
     </string-array>
 
 
